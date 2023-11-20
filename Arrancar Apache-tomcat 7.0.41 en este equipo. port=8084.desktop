@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon[es]=gnome-panel-launcher
+Name[es]=Arrancar Apache-tomcat 7.0.41 en este equipo. port=8084
+Exec="/home/henrypb/Escritorio/startUp apache-tomcat 7.0.41"
+Name=Arrancar Apache-tomcat 7.0.41 en este equipo
+Icon=gnome-panel-launcher
+Comment[es]=Autor: H.J.P.B. Creado: Abril, 25. 2018.

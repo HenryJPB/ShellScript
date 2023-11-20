@@ -1,0 +1,9 @@
+#------------------------------------------------------------------------------
+#  shell script file name=importar
+#  Creado x Henry Pulgar.
+#  el 17 Febrero de 2004.
+#  NOTA: ( 02-02-2010 ): este script no funciono emitiendo el siguiente error:
+#         - IMP-00034: Warning: FromUser "OPS" not found in export file
+#         - IMP-00033: Warning: Table "KK_DAT" not found in export file
+#------------------------------------------------------------------------------
+imp system/manager802 FILE=full_22012010.dat FROMUSER=ops$desinv02 TOUSER=ops$contab TABLES=kk_dat

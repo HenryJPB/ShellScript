@@ -1,0 +1,17 @@
+#------------------------------------------------------------------------------------------------------------
+#                                                    * encender *  
+# $Header: comenzar ( /home/oracle/ )    
+# Copyright (c) by Oracle Corporation 
+# Henry J. Pulgar B.
+# 25 de Abril 2016. 
+# check for URL: http://dba.stackexchange.com/questions/42774/how-to-quickly-startup-shutdown-oracle-11
+#------------------------------------------------------------------------------------------------------------
+lsnrctl start
+sqlplus /nolog <<EOF
+connect sys as sysdba
+startup
+quit
+EOF
+
+#emctl start dbconsole
+#  

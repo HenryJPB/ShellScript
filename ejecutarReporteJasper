@@ -1,0 +1,61 @@
+
+.
+.
+.
+
+                 <menuitem label="REPORTE PERSONAL (MySQL)" onClick="showReporte()" />
+                 <menuitem label="Retornar Pag Principal"/>
+ </menu>
+ <jasperreport id="reporte" height="360px" />
+             <zscript>
+		  import desica.curso.modelo.bd.conectorBDMySQL;
+
+		  void showReporte() {
+                       Jasperreport reporte;
+		       //Preparing parameters
+		       Map parameters = new HashMap();
+		       parameters.put("ReportTitle", "REPORTE de PERSONAL (MySQL)");
+		       //parameters.put("DataFile", "CustomDataSource from java");
+
+                      //String dir = "/WEB-INF/reportes/datasource/";
+                      String dir = "ireportes/"; 
+                      String nombreReporte = "reportMySQLPersonal01.jasper";
+                      reporte.setSrc(dir+nombreReporte);
+	              reporte.setParameters(parameters);
+	              //reporte.setDatasource(conectorBDMySQL.getConnection());
+	              reporte.setDataConnection(conectorBDMySQL.getConnection());
+                      //reporte.setType((String) format.getSelectedItem().getValue());
+	              reporte.setType("xls");
+                 }
+           </zscript>
+.
+.
+.
+
+El sistema produce los siguientes ERRORES en tiempo de COMPILACION: 
+
+/home/henrypb/NetBeansProjects/zk/curso/src/java/desica/curso/controlador/conectarMySQL.java:423: non-static method getConnection() cannot be referenced from a static context
+       reporte.setDataConnection(conectorBDMySQL.getConnection());
+/home/henrypb/NetBeansProjects/zk/curso/src/java/desica/curso/controlador/conectarMySQL.java:423: cannot find symbol
+symbol  : method setDataConnection(com.mysql.jdbc.Connection)
+location: class org.zkoss.zkex.zul.Jasperreport
+       reporte.setDataConnection(conectorBDMySQL.getConnection());
+Note: Some input files use unchecked or unsafe operations.
+
+y ERRORES en tiempo de CORRIDA:
+
+HTTP Status 500 -
+
+type Exception report
+
+message
+
+descriptionThe server encountered an internal error () that prevented it from fulfilling this request.
+
+exception
+
+org.zkoss.zk.ui.metainfo.DefinitionNotFoundException: Component definition not found: jasperreport in [LanguageDefinition: xul/html], [SYS file:/home/henrypb/NetBeansProjects/zk/curso/build/web/index.zul line 110 col 77]
+
+note The full stack traces of the exception and its root causes are available in the GlassFish Server Open Source Edition 3.0.1 logs.
+GlassFish Server Open Source Edition 3.0.1
+

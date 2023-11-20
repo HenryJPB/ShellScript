@@ -1,0 +1,9 @@
+#---------------------------------------------------------------------
+# Henry J. Pulgar B. Bqto, 07/07/2020. 
+#
+# *IMPORTANTE* => Colocar este archivo en {Apache Tomcat home}/bin/
+#
+#---------------------------------------------------------------------
+export JRE_HOME=/lib/jvm/jdk1.8.0_231
+export JAVA_HOME=/lib/jvm/jdk1.8.0_213
+./shutdown.sh  

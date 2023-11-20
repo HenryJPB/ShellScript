@@ -1,0 +1,7 @@
+#------------------------------------------------------------------------------
+#  shell script file name=importar
+#  Creado x Henry Pulgar.
+#  el 17 Febrero de 2004.
+#  Esto no esta funcionando: "Error usuario OPS$ ... no definido ..."
+#------------------------------------------------------------------------------
+imp system/manager802 FILE=full_15042005.dat FROMUSER=ops$condes TOUSER=ops$contab TABLES=SRW_FIELD,SRW_FKEY,SRW_GRANT,SRW_GROUP,SRW_PARAM,SRW_QUERY,SRW_REPORT,SRW_STE,SRW_SUMARY,SRW_TEXT,SRW_TEXT_LONG

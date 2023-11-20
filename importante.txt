@@ -1,0 +1,2 @@
+ORACLE_HOME=/home01/oracle80
+PATH=$PATH:$ORACLE_HOME/bin

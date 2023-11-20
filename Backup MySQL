@@ -1,0 +1,9 @@
+* COMANDO RESPALDAR : 
+
+mysqldump -u root -p -h 193.168.0.59 DESICA > DESICA.sql
+
+* COMANDO RESPALDAR SOLO LA ESTRUCTURA DE DATOS:
+
+mysqldump -u root -p -h 193.168.0.59 --no-data DESICA > EstructuraBD_DESICA.sql
+ 
+

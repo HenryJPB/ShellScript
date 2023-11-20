@@ -1,0 +1,8 @@
+ORACLE_HOME=/home01/oracle80
+PATH=$PATH:$ORACLE_HOME/bin
+cd ./backup_desica
+file_name=$1
+exp / file=${file_name} tables=nomd_dat nomybas_Dat nomyobas_dat
+echo ""
+ls -l ${file_name}
+cd

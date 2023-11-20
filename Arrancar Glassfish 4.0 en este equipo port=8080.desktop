@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon[es]=gnome-panel-launcher
+Name[es]=Arrancar Glassfish 4.0 en este equipo port=8080
+Exec=/usr/local/glassfish-4.0/bin/startGlassfish.sh
+Comment[es]=Autor: H.J.P.B. basado: "gnome-desktop-item-edit --create-new ~/Escritorio"
+Name=Arrancar Glassfish 4.0 en este equipo
+Comment=Autor: H.J.P.B. basado: "gnome-desktop-item-edit --create-new ~/Escritorio"
+Icon=gnome-panel-launcher
